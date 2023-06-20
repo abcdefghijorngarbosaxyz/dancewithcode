@@ -17,13 +17,28 @@
   ];
 </script>
 
+<svelte:head>
+  <title>Jorn Blaedel Garbosa</title>
+  <meta
+    name="description"
+    content="I am a web developer, specializing in Typescript, holding a steadfast belief in the transformative power of simplicity." />
+  <meta property="og:title" content="Jorn Blaedel Garbosa" />
+  <meta
+    property="og:description"
+    content="I am a web developer, specializing in Typescript, holding a steadfast belief in the transformative power of simplicity." />
+  <meta property="twitter:title" content="Jorn Blaedel Garbosa" />
+  <meta
+    property="twitter:description"
+    content="I am a web developer, specializing in Typescript, holding a steadfast belief in the transformative power of simplicity." />
+  <meta property="og:site_name" content="Jorn Blaedel Garbosa" />
+</svelte:head>
+
 <h1>Jorn Blaedel Garbosa</h1>
 <p>
-  I am a web developer, specializing in Typescript and Web Performance, holding a steadfast belief
-  in the transformative power of simplicity. Embracing the elegance of minimalism, my website
-  becomes a reflection of my approach to both design and life itself. With every pixel meticulously
-  placed, I passionately strive to create digital experiences that exhale elegance and
-  functionality.
+  I am a web developer, specializing in Typescript, holding a steadfast belief in the transformative
+  power of simplicity. Embracing the elegance of minimalism, my website becomes a reflection of my
+  approach to both design and life itself. With every pixel meticulously placed, I passionately
+  strive to create digital experiences that exhale elegance and functionality.
 </p>
 <p>
   I am also proficient in Python and Rust, but my true passion lies in the realm of web development.
