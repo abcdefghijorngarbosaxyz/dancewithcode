@@ -1,4 +1,6 @@
-<script lang="ts"></script>
+<script lang="ts">
+  import '../app.css'
+</script>
 
 <svelte:head>
   <link rel="icon" type="image/svg" href="favicon.svg" />
