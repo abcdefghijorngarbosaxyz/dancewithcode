@@ -1,3 +1,75 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Manrope';
+  font-weight: 300;
+  font-style: normal;
+  src: url('/fonts/Manrope-Light.woff2') format('woff2');
+}
+
+:root {
+  --pad-top: 128px;
+  --margin-left: max(24px, env(safe-area-inset-left));
+  --margin-right: max(24px, env(safe-area-inset-right));
+}
+
+@media (max-width: 768px) {
+  :root {
+    --pad-top: 64px;
+  }
+}
+
+*,
+:before,
+:after {
+  @apply box-border;
+}
+
+html {
+  @apply scroll-pt-[calc(var(--header-height)_+_16px)] selection:bg-[rgb(229,_229,_229)];
+}
+
+body {
+  font-feature-settings: 'kern' 1;
+  @apply m-0 pb-[env(safe-area-inset-bottom)] pl-[var(--margin-left)] pr-[var(--margin-right)] text-[16px] font-light text-[#404040] antialiased;
+}
+
+html,
+body {
+  @apply font-['Manrope'];
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  @apply mx-auto my-0 max-w-xl px-0 py-[var(--pad-top)];
+}
+
+article {
+  @apply w-full;
+}
+
+article > :first-child {
+  @apply mt-0;
+}
+
+article > :not(:last-child, h1) {
+  @apply mb-8;
+}
+
+article > :where(h1) {
+  @apply my-16 leading-7;
+}
+
+article > :where(h2, h3, h4, h5, h6) {
+  @apply mb-8 mt-16 leading-7;
+}
+
+article > :where(p, li) {
+  @apply leading-7 tracking-normal;
+}
+
+a {
+  @apply hover:bg-[rgba(229,_229,_229,_0.5)];
+}
