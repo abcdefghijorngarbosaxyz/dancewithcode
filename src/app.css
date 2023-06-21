@@ -62,8 +62,12 @@ article > :where(h1) {
   @apply my-16 leading-7;
 }
 
-article > :where(h2, h3, h4, h5, h6) {
-  @apply mb-8 mt-16 leading-7;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply mb-8 leading-7;
 }
 
 article > :where(p, li) {
@@ -71,5 +75,17 @@ article > :where(p, li) {
 }
 
 a {
-  @apply hover:bg-[rgba(229,_229,_229,_0.5)];
+  @apply text-[#404040] underline underline-offset-2 hover:bg-[rgba(229,_229,_229,_0.5)];
+}
+
+ul {
+  @apply list-disc pl-[1.625em] text-[#d4d4d4];
+}
+
+ul li {
+  @apply leading-9;
+}
+
+ul > li > p {
+  @apply w-fit text-[#404040];
 }

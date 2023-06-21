@@ -13,6 +13,10 @@
     {
       url: 'https://github.com/abcdefghijorngarbosaxyz',
       name: 'GitHub'
+    },
+    {
+      url: 'https://rep.ly/dfntlynotjorn',
+      name: 'Rep.ly'
     }
   ];
 </script>
@@ -46,25 +50,44 @@
   problem-solving abilities to build seamless and immersive digital experiences.
 </p>
 
-<section class="w-full flex flex-col md:flex-row space-x-4">
+<hr class="border-dashed" />
+
+<h2>Say Hello</h2>
+<section class="w-full flex flex-col md:flex-row md:space-x-4">
   {#each socials as social}
-    <a class="flex items-center" href={social.url}
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center no-underline"
+      href={social.url}
       >{social.name} <span class="w-4 h-4 ml-1 -mr-1"><ArrowNe class="w-full h-full" /></span>
     </a>
   {/each}
 </section>
 
-<hr class="w-full border-dashed" />
+<hr class="border-dashed" />
 
-<h2>Now</h2>
+<h2>Building</h2>
 <p>
-  In this present moment, I am fully dedicated to developing and refining my skills as a web
-  developer. Each day is a new opportunity for growth, as I actively engage in practice and learning
-  to stay ahead of the curve. The freelance world has become my playground, where I apply my
-  expertise and collaborate with clients to bring their visions to life.
+  I am fully dedicated to developing and refining my skills as a web developer. Each day is a new
+  opportunity for growth, as I actively engage in practice and learning to stay ahead of the curve.
+  So far, I've built some apps, including:
 </p>
+<ul>
+  <li>
+    <p>
+      <span class="pr-1"><a target="_blank" href="https://github.com/Zeri-App/zeri">Zeri</a></span>—
+      an offline first, free, and open-source desktop music player.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span class="pr-1"><a target="_blank" href="https://kazinsbeachresort.com">Kazins</a></span>—
+      a mock website for a resort in Capiz.
+    </p>
+  </li>
+</ul>
 <p>
-  When I'm not immersed in the world of web development, you'll often find me diving into the
-  captivating universe of online gaming. It's a thrilling escape where I can unleash my competitive
-  spirit and connect with a vibrant community of like-minded individuals.
+  I also freelance occasionally, it has become my playground, where I apply my expertise and
+  collaborate with clients to bring their visions to life.
 </p>
