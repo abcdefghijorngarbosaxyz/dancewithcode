@@ -74,8 +74,13 @@ article > :where(p, li) {
   @apply leading-7 tracking-normal;
 }
 
-a {
-  @apply text-[#404040] underline underline-offset-2 hover:bg-[rgba(229,_229,_229,_0.5)];
+section a {
+  @apply hover:bg-[rgba(229,_229,_229,_0.5)];
+}
+
+p a {
+  text-decoration-skip-ink: none;
+  @apply text-[#404040] underline decoration-[rgba(229,_229,_229,_0.5)] decoration-8 underline-offset-[-4px] hover:decoration-[rgba(229,_229,_229,_1)];
 }
 
 ul {
