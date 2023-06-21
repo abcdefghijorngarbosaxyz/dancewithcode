@@ -80,7 +80,7 @@
     <a
       target="_blank"
       rel="noopener noreferrer"
-      class="flex items-center no-underline"
+      class="flex items-center no-underline w-fit"
       href={social.url}
       >{social.name} <span class="w-4 h-4 ml-1 -mr-1"><ArrowNe class="w-full h-full" /></span>
     </a>
