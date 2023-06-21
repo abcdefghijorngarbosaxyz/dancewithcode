@@ -75,12 +75,12 @@ article > :where(p, li) {
 }
 
 section a {
-  @apply hover:bg-[rgba(229,_229,_229,_0.5)];
+  @apply transition-colors duration-300 hover:bg-[rgba(229,_229,_229,_0.5)];
 }
 
 p a {
   text-decoration-skip-ink: none;
-  @apply text-[#404040] underline decoration-[rgba(229,_229,_229,_0.5)] decoration-8 underline-offset-[-4px] hover:decoration-[rgba(229,_229,_229,_1)];
+  @apply text-[#404040] underline decoration-[rgba(229,_229,_229,_0.5)] decoration-8 underline-offset-[-4px] transition-colors duration-300 hover:decoration-[rgba(229,_229,_229,_1)];
 }
 
 ul {
