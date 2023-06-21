@@ -44,16 +44,11 @@
   approach to both design and life itself. With every pixel meticulously placed, I passionately
   strive to create digital experiences that exhale elegance and functionality.
 </p>
-<p>
-  I am also proficient in Python and Rust, but my true passion lies in the realm of web development.
-  It is within this domain that I pour my energy and expertise, channeling my creativity and
-  problem-solving abilities to build seamless and immersive digital experiences.
-</p>
 
 <hr class="border-dashed" />
 
 <h2>Say Hello</h2>
-<section class="w-full flex flex-col md:flex-row md:space-x-4">
+<section class="w-full flex flex-col max-md:space-y-4 md:flex-row md:space-x-4">
   {#each socials as social}
     <a
       target="_blank"
