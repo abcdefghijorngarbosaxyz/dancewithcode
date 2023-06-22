@@ -22,6 +22,19 @@
     }
   ];
 
+  const buildings: Array<LinkItem> = [
+    {
+      url: 'https://github.com/Zeri-App/zeri',
+      name: 'Zeri',
+      description: 'an offline first, free, and open-source desktop music player.'
+    },
+    {
+      url: 'https://github.com/abcdefghijorngarbosaxyz/quakerauth',
+      name: 'Quakerauth',
+      description: 'a time-based OTP authenticator app.'
+    }
+  ];
+
   const projects: Array<LinkItem> = [
     {
       url: 'https://dmw-registration.vercel.app',
@@ -89,31 +102,34 @@
 
 <hr class="border-dashed" />
 
-<h2>Building</h2>
+<h2>Beyond the Clock</h2>
 <p>
   I am fully dedicated to developing and refining my skills as a web developer. Each day is a new
   opportunity for growth, as I actively engage in practice and learning to stay ahead of the curve.
   These are what I'm building now:
 </p>
 <ul>
-  <li>
-    <p>
-      <span class="pr-1"><a target="_blank" href="https://github.com/Zeri-App/zeri">Zeri</a></span>—
-      an offline first, free, and open-source desktop music player.
-    </p>
-  </li>
+  {#each buildings as building}
+    <li>
+      <p>
+        <span><a target="_blank" href={building.url}>{building.name}</a></span> — {building.description}
+      </p>
+    </li>
+  {/each}
 </ul>
 <p>
   I also freelance occasionally, it has become my playground, where I apply my expertise and
   collaborate with clients to bring their visions to life.
 </p>
 
-<h2>Projects</h2>
+<hr class="border-dashed" />
+
+<h2>Ideas Brought to Life</h2>
 <ul>
   {#each projects as project}
     <li>
       <p>
-        <span class="pr-1"><a target="_blank" href={project.url}>{project.name}</a></span>— {project.description}
+        <span><a target="_blank" href={project.url}>{project.name}</a></span> — {project.description}
       </p>
     </li>
   {/each}

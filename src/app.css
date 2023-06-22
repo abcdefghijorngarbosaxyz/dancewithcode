@@ -88,7 +88,7 @@ ul {
 }
 
 ul li {
-  @apply leading-9;
+  @apply leading-7;
 }
 
 ul > li > p {
