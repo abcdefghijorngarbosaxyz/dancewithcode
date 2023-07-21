@@ -33,11 +33,6 @@
       name: 'Quakerauth',
       description: 'a time-based OTP authenticator app.'
     },
-    {
-      url: 'https://github.com/abcdefghijorngarbosaxyz/spotify-downloader-gui',
-      name: 'spotDL GUI',
-      description: 'a GUI implementation of spotDL CLI.'
-    }
   ];
 
   const projects: Array<LinkItem> = [
