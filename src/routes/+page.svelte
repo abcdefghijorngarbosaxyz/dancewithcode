@@ -134,3 +134,7 @@
     </li>
   {/each}
 </ul>
+
+<hr class="border-dashed" />
+
+<h2>PS: BOBO MO AYWA</h2>
